@@ -19,6 +19,12 @@ spec:
       - image: azkadevops/nodejs:latest 
         name: nodejs
         imagePullPolicy: Always
+        env:
+        - name: db-secret
+          valueFrom:
+            secretKeyRef:
+              name: db-pass
+              key: db-password
         ports:
         - containerPort: 8080 
         envFrom:
