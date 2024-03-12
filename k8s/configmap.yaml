@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: nodejs
+  name: nodejs-env
+data:
+  PORT: "4040"
+  MONGODB_URI: "mongodb+srv://azkamalik0011:5X4ewU5DAGofKmQw@cluster0.7yhcjky.mongodb.net/new?retryWrites=true&w=majority"
