@@ -18,4 +18,4 @@ spec:
       - name: nodejs
         image: azkadevops/nodejs:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 8081 
