@@ -18,5 +18,9 @@ spec:
       containers:
       - image: azkadevops/nodejs:latest 
         name: nodejs
+        imagePullPolicy: Always
         ports:
-        - containerPort: 8081 
+        - containerPort: 8080 
+        envFrom:
+        - configMapRef:
+            name: nodejs-env
