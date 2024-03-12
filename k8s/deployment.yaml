@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: nodejs
   name: nodejs-deployment
   labels:
     app: nodejs
@@ -15,7 +16,7 @@ spec:
         app: nodejs
     spec:
       containers:
-      - name: nodejs
-        image: azkadevops/nodejs:latest
+      - image: azkadevops/nodejs:latest 
+        name: nodejs
         ports:
         - containerPort: 8081 
